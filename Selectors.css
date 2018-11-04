@@ -1,0 +1,4 @@
+/* Применяет стиль к li, если у него есть дочерний элемент a с классом .active
+Или переф
+*/
+li:has(> a.active) { /* styles to apply to the li tag */ }
