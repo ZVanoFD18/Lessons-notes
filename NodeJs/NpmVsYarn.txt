@@ -1,0 +1,22 @@
+https://yarnpkg.com/lang/uk/docs/migrating-from-npm/
+
+
+Порівняння консольних команд
+npm (v5)               Yarn
+npm install                             yarn install
+(Н/З)                                   yarn install --flat
+(Н/З)                                   yarn install --har
+npm install --no-package-lock           yarn install --no-lockfile
+(Н/З)                                   yarn install --pure-lockfile
+npm install [package]                   yarn add [package]
+npm install [package] --save-dev        yarn add [package] --dev
+(Н/З)                                   yarn add [package] --peer
+npm install [package] --save-optional   yarn add [package] --optional
+npm install [package] --save-exact      yarn add [package] --exact
+(Н/З)                                   yarn add [package] --tilde
+npm install [package] --global          yarn global add [package]
+npm update --global                     yarn global upgrade                    
+npm rebuild                             yarn install --force
+npm uninstall [package]                 yarn remove [package]
+npm cache clean                         yarn cache clean [package]
+rm -rf node_modules && npm install      yarn upgrade

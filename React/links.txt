@@ -1,0 +1,2 @@
+Изучение React бесплатно. Часть 1. Подготовка. Пример приложения
+http://weblab.ua/rearning-react-1-example/

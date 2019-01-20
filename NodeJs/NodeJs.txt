@@ -1,0 +1,23 @@
+# https://myrusakov.ru/nodejs-package-json.html
+# NodeJS. Как работать с файлом package.json.
+
+# Создаем "package.json"
+>npm init
+
+# Добавляем в проект зависимость "express" и сохраняем в "package.json".
+# Если не сохранять, то пакет тупо скачается в "node_modules" и потом будут проблеммы при
+# поднятии проекта на другом компьютере.
+>npm install express -save
+
+# Имея "package.json" можем восстановить список пакетов.
+>npm install
+
+# Выводит информацию о пакете
+>npm info npm
+>npm info grunt-cli
+
+# Выводит информацию о пакетах 
+## Локальные пакеты + фильтр на "gulp"
+>npm list |grep "gulp"
+## Глобальные пакеты + фильтр на "grunt"
+>npm list -g |grep "grunt"

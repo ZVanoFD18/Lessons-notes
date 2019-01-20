@@ -1,0 +1,4 @@
+Паттерны проектирования.
+
+Примеры на TypeScript
+https://github.com/gztchan/design-patterns-in-typescript

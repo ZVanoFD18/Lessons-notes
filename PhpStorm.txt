@@ -1,0 +1,1 @@
+div.grid-item*3TAB - Создаст 3 штуки "<div class="grid-item"></div>"
