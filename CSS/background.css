@@ -1,0 +1,10 @@
+div.photo{
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin: 1rem;
+    background-image: url('/assets/user.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

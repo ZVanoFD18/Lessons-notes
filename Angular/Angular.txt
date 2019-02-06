@@ -5,6 +5,7 @@ https://angular.io/guide/quickstart
 https://metanit.com/web/angular2/
 
 1. Устанавливаем "npm" (если еще не установлен)
+# Если "package.json" уже есть, то установятся пакеты.
 >npm install
 >npm update
 
@@ -24,7 +25,11 @@ https://metanit.com/web/angular2/
 >cd my-app
 # Запустить сервер и открыть браузер
 >ng serve -o
+# Запустить сервер на порту 4201 и открыть браузер
+>ng serve -o --port 4201
 
 5. Генерация компонента в существующий проект.
 # Генерируем компонент "users"
 >ng g c users
+# Генерируем сервис
+ng g s services/usersRandom
