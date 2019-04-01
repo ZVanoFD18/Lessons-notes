@@ -15,6 +15,24 @@ https://metanit.com/web/angular2/
 >npm install -g "@angular/cli"
 ## macOs/Linux:
 >npm install -g @angular/cli
+2.1. Если вдруг нужно удалить модуль
+# Локально
+>npm uninstall @angular/cli --save
+# Глобально
+>npm uninstall @angular/cli -g --save
+2.3. Смотрим в документации что можно генерить.
+https://angular.io/cli/generate
+# Генерирем простой класс с именем "helper.ts"
+ng g class /user/profile/helper
+# Генерирем интерфейс с именем "iclass1.ts"
+ng g class /user/profile/iclass1
+# Генерируем "guard" (2 файла)
+#Он  поможет проверять допустимость навигации по ссылкам.
+ng g guard /user/profile/profile
+# Генерируем сервис (2 файла)
+ng g s services/usersRandom
+# Генерируем модуль маршрутизации (1 файл)
+ng generate module app-routing --flat --module=app
 
 3. Генерируем заготовку приложения angular (если приложения еще нет)
 >ng new my-app
@@ -29,7 +47,10 @@ https://metanit.com/web/angular2/
 >ng serve -o --port 4201
 
 5. Генерация компонента в существующий проект.
-# Генерируем компонент "users"
+# Генерируем компонент "users" (4ре файла(.
 >ng g c users
-# Генерируем сервис
+# Генерируем сервис (2 файла)
 ng g s services/usersRandom
+# Генерируем модуль маршрутизации (1 файл)
+ng generate module app-routing --flat --module=app
+

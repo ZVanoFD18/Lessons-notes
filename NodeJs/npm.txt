@@ -1,0 +1,51 @@
+# Глобальный репозитарий пакетов
+http://registry.npmjs.org/
+# Поиск пакетов  в глобальном репозитарии
+https://www.npmjs.com/search
+# Если хотим личный репозитарий
+https://github.com/npm/npm-registry-couchapp
+
+# Встроенная помощь в консоли
+>npm help команда
+# Показать список команд, которые можно выполнить из консоли.
+# Например: test, watch и т.д (секция "scripts" в "package.json").
+>npm help scripts
+# Информация по секциям "package.json"
+>npm help json
+
+# Создаем "package.json"
+>npm init
+#Создать пользователя для публикации пакета в глобальном репо
+>npm adduser
+# Опубликовать пакет
+>npm publish
+
+# Добавляем в проект зависимость "express" и сохраняем в "package.json".
+# Если не сохранять, то пакет тупо скачается в "node_modules" и потом будут проблеммы при
+# поднятии проекта на другом компьютере.
+>npm install express -save
+
+# Имея "package.json" можем восстановить список пакетов.
+>npm install
+
+# Ищем пакет по имени
+>npm search webpack-concat-plugin
+>npm search supermodule module
+
+# Выводит информацию о пакете
+>npm info npm
+>npm info grunt-cli
+
+# Выводит информацию о пакетах 
+## Локальные пакеты + фильтр на "gulp"
+>npm list |grep "gulp"
+## Глобальные пакеты + фильтр на "grunt"
+>npm list -g |grep "grunt"
+
+
+# Устанавливаем пакет
+>npm install webpack-concat-plugin@3.0.0 --save-dev
+# Удаляем пакет 
+>npm remove supermodule
+# Обновляем пакеты 
+>npm update
